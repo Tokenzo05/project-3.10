@@ -1,0 +1,107 @@
+/* ==========================================
+   Task 3: Overall Webpage & Body Styles
+   ========================================== */
+body {
+    background-color: #f2f2f2; /* Light gray page background */
+    font-family: Arial, sans-serif; /* Set font to Arial */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* ==========================================
+   Task 3: Layout Structure
+   ========================================== */
+main {
+    max-width: 960px; /* Maximum width of 960px */
+    margin: 0 auto; /* Center horizontally using auto margins */
+}
+
+section {
+    background-color: #ffffff; /* White background color for sections */
+    padding: 20px; /* 20px padding to separate content blocks */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* Light box shadow layout requirement */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* Header and Footer basic layouts */
+header, footer {
+    max-width: 960px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* ==========================================
+   Task 4: Navigation Menu Styling (Flexbox)
+   ========================================== */
+nav {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex; /* Flexbox configuration */
+    justify-content: center; /* Center horizontally via justified alignment */
+    list-style-type: none; /* Remove list bullets */
+    padding: 0; /* Remove extra list padding */
+    margin: 0;
+}
+
+nav li {
+    /* Margin of 0px top/bottom and 15px left/right */
+    margin: 0 15px; 
+}
+
+nav a {
+    color: #ffffff; /* White text color */
+    background-color: #333333; /* Background color #333 */
+    padding: 12px 20px; /* 12px vertical and 20px horizontal padding */
+    text-decoration: none; /* Remove text underlines */
+    display: block; /* Display links as block elements */
+    border-radius: 4px; /* Slightly rounded corners */
+    /* Transition effect for hover smoothing (0.3s) */
+    transition: background-color 0.3s ease; 
+}
+
+/* Hover Effect for Links */
+nav a:hover {
+    background-color: #555555; /* Change background color from #333 to #555 */
+}
+
+/* ==========================================
+   Task 5: Product Table Styling
+   ========================================== */
+table {
+    width: 100%; /* Table width at 100% of container */
+    border-collapse: collapse; /* Remove spacing between cells */
+    margin-top: 15px;
+}
+
+/* Colgroup rules to style specific columns */
+.highlight-col {
+    background-color: #f9f9f9; /* Light gray background color for 1st and 3rd columns */
+}
+
+/* Style each cell (header and data cells) */
+th, td {
+    border: 1px solid #cccccc; /* Solid border of 1 pixel in light gray */
+    padding: 12px; /* Padding of 12 pixels */
+    text-align: left; /* Align text to the left for all cells */
+}
+
+/* Header row override styles */
+thead tr {
+    background-color: #444444; /* Background color #444 */
+}
+
+thead th {
+    color: #ffffff; /* Text color white */
+}
+
+/* Footer row override styles */
+tfoot tr td {
+    text-align: center; /* Center the footer row's content */
+    font-style: italic; /* Italic font style */
+    border-top: 2px solid #ccccccc; /* Explicit top border for visual separation */
+}
